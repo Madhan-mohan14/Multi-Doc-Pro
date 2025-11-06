@@ -1,0 +1,21 @@
+# requirements.txt for Multi-Doc Pro
+
+# UI/Framework
+streamlit>=1.30.0
+
+# LangChain Dependencies
+langchain-core
+langchain-community
+langchain-classic
+langchain-text-splitters
+
+# Model & Embedding Providers
+langchain-groq
+langchain-google-genai
+
+# Vector Store
+langchain-chroma
+
+# Utility & File Handling
+python-dotenv
+pypdf # Necessary dependency for PyPDFLoader
