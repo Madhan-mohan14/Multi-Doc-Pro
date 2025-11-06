@@ -1,4 +1,6 @@
 # app.py 
+# © 2025 Madhan Mohan | All Rights Reserved.
+# Unauthorized copying, modification, or redistribution of this file, via any medium, is strictly prohibited.
 
 import streamlit as st
 from file_handler import load_documents_from_files
@@ -78,4 +80,5 @@ def main():
             })
 
 if __name__ == "__main__":
+
     main()
