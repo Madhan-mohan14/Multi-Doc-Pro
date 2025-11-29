@@ -19,7 +19,8 @@ Unlike traditional pipelines that strip away visual context, this system uses **
 
 The pipeline follows a **"Parse-Then-Chunk"** architecture optimized for preserving document structure.
 
-`![Architecture]("https://github.com/user-attachments/assets/8416d320-0ff6-40df-b10f-c988d4d0e4a1")
+
+<img width="1160" height="2299" alt="Untitled diagram-2025-11-29-080214" src="https://github.com/user-attachments/assets/f6c06661-07f6-4c1e-b747-12626bbc3092" />
 
 ---<img width="2816" height="1536" alt="Gemini_Generated_Image_2lty912lty912lty" src="https://github.com/user-attachments/assets/f7b34336-d969-49c9-af3e-725a1d6942c8" />
 
@@ -56,11 +57,11 @@ MULTI-DOC-PRO/
 ##🌟 Key Features
 | **Feature**                 | **Description**                                                    | **Tech Stack**             |
 | --------------------------- | ------------------------------------------------------------------ | -------------------------- |
-| 👀 **Multi-Modal Vision**   | Parses PDFs as images to extract charts & tables into Markdown.    | LlamaParse, GPT-4o-mini    |
-| 🧠 **Smart Chunking**       | Splits text by Markdown headers to preserve logical sections.      | MarkdownHeaderTextSplitter |
-| 🎯 **Precision Retrieval**  | Uses a Two-Stage retrieval process (Vector Search + Reranking).    | ChromaDB, FlashRank        |
-| 🛡️ **Hallucination Guard** | Answers are strictly grounded in retrieved context with citations. | LangChain, Llama-3.3-70b   |
-| ⚖️ **Automated Eval**       | Self-grading pipeline to measure Faithfulness and Accuracy.        | Ragas Framework            |
+| ``👀 Multi-Modal Vision``   | Parses PDFs as images to extract charts & tables into Markdown.    | LlamaParse, GPT-4o-mini    |
+| ``🧠 Smart Chunking ``      | Splits text by Markdown headers to preserve logical sections.      | MarkdownHeaderTextSplitter |
+| ``🎯 Precision Retrieval ``| Uses a Two-Stage retrieval process (Vector Search + Reranking).    | ChromaDB, FlashRank        |
+|`` 🛡️ Hallucination Guard``| Answers are strictly grounded in retrieved context with citations. | LangChain, Llama-3.3-70b   |
+|`` ⚖️ Automated Eval``     | Self-grading pipeline to measure Faithfulness and Accuracy.        | Ragas Framework            |
 
 ---
 ##🚀 Getting Started(local deployment)
@@ -109,8 +110,10 @@ Proprietary & Confidential. Copyright (c) 2025 Madhan Mohan. All Rights Reserved
 Permitted: Viewing for educational/evaluation purposes.
 
 Prohibited: Commercial use, modification, or redistribution without permission.
+## 🔮 Future Roadmap
 
-## 🚧 Future Enhancements
-optimization
-
-Using high perfomance fast llm models 
+* **🗣️ Audio Querying:** Integrate OpenAI Whisper to allow users to ask questions via voice instead of typing.
+* **🔍 Hybrid Search:** Implement BM25 + Vector Search (Reciprocal Rank Fusion) to better capture specific acronyms and keywords.
+* **☁️ Cloud Native:** Dockerize the application and migrate to serverless vector databases (Pinecone/Weaviate) for enterprise scaling.
+* **🕸️ GraphRAG:** Add Knowledge Graphs to link disconnected entities across documents for complex multi-hop reasoning.
+* **🕵️ Agentic Workflow:** Upgrade to LangGraph agents that can self-correct poor retrieval results and validate data with external tools and also user can ask related to the previous questions and maintain history.
